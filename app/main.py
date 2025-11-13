@@ -13,8 +13,8 @@ def get_weather() -> None:
 
     data = response.json()
 
-    print(f"Current weather in {data("location")("name")} is "
-          f"{data("current")("temp_c")}°C")
+    print(f"Current weather in {data['location']['name']} is "
+          f"{data['current']['temp_c']}°C")
 
 
 if __name__ == "__main__":
